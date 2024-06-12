@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+ 
+  <link rel="stylesheet" href="tss.css">
+
+</head>
+<body>
+  <div class="container">
+    <button type="submit" class="btn" onclick="openPopup()">KUMPULKAN</button>
+    
+    <div class="popup" id="popup">
+      <img src="404-tick.png">
+      <h2>Terimakasih Telah Mengisi</h2>
+      <p>Data yang anda kirimkan berhasil dikumpulkan</p>
+      <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+  </div>
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    // function openPopup(){
+    //   popup.classList.add("open-popup");
+    // };
+    // function closePopup(){
+    //   popup.classList.remove("open-popup");
+    // };
+
+    // let popup = document.querySelector("popup");
+
+
+
+    function openPopup(){
+       popup.classList.add("open-popup");
+       console.log("Fungsi openPopup dipanggil");
+   };
+   function closePopup(){
+       console.log("Fungsi closePopup dipanggil");
+       popup.classList.remove("open-popup");
+   };
+
+  </script>
+
+
+</body>
+</html>
